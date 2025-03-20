@@ -13,7 +13,7 @@ export class Category {
   selector: 'app-category',
   imports: [NgFor, FormsModule, NgIf],
   templateUrl: './category.component.html',
-  styleUrl: './category.component.css'
+  styleUrls: ['./category.component.css']
 })
 export class CategoryComponent implements OnInit {
 

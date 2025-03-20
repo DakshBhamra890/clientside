@@ -1,8 +1,10 @@
 import { Routes } from '@angular/router';
-import { Transaction } from './components/transaction/transaction.component';
-import { Category } from './components/category/category.component';
+import { HomeComponent } from './components/home/home.component';
+import { TransactionComponent } from './components/transaction/transaction.component';
+import { CategoryComponent } from './components/category/category.component';
 
 export const routes: Routes = [
-    {path:"transactions", component: Transaction},
-    {path:"categories", component: Category}
+    {path:"", component: HomeComponent},
+    {path:"transaction", component: TransactionComponent},
+    {path:"category", component: CategoryComponent}
 ];

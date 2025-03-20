@@ -15,7 +15,7 @@ export class Transaction {
   selector: 'app-transaction',
   imports: [NgFor, FormsModule, NgIf],
   templateUrl: './transaction.component.html',
-  styleUrl: './transaction.component.css'
+  styleUrls: ['./transaction.component.css']
 })
 export class TransactionComponent implements OnInit {
   constructor(private transactionService: TransactionService) {}

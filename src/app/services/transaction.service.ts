@@ -22,10 +22,11 @@ export class TransactionService {
   addTransaction(transaction: any) {
     return this.http.post(`${this.serverUrl}/transactions`, transaction);
   }
-  deleteTransaction(_id: string) {
-    return this.http.delete(`${this.serverUrl}/transactions/${_id}`);
-  }
   updateTransaction(transaction: any) {
     return this.http.put(`${this.serverUrl}/transactions/${transaction._id}`, transaction);
   }
+  deleteTransaction(_id: string) {
+    return this.http.delete(`${this.serverUrl}/transactions/${_id}`);
+  }
+
 }
